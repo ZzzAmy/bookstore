@@ -88,6 +88,11 @@ FORMS    += \
 
 QT += sql
 
-INCLUDEPATH += "C:\Program Files\MySQL\MySQL Server 5.7\include"
+#INCLUDEPATH += "C:\Program Files\MySQL\MySQL Server 5.7\include"
 
-LIBS += "C:\Program Files\MySQL\MySQL Server 5.7\lib\libmysql.lib"
+#LIBS += "C:\Program Files\MySQL\MySQL Server 5.7\lib\libmysql.lib"
+
+
+INCLUDEPATH += "D:\MySQL\mysql-5.6.24-win32\include"
+
+LIBS += "D:\MySQL\mysql-5.6.24-win32\lib\libmysql.lib"
