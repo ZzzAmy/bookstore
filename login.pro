@@ -35,7 +35,13 @@ SOURCES += main.cpp\
     handle_mysql.cpp \
     book.cpp \
     query.cpp \
-    usrmag_student.cpp
+    usrmag_student.cpp \
+    inquiry_manager.cpp \
+    book_search.cpp \
+    student_info_inquiry_search.cpp \
+    lendbook_overall.cpp \
+    bookinquiry_table.cpp \
+    managerinfo_overall_show.cpp
 
 
 HEADERS  += \
@@ -61,7 +67,13 @@ HEADERS  += \
     handle_mysql.h \
     query.h \
     book.h \
-    usrmag_student.h
+    usrmag_student.h \
+    inquiry_manager.h \
+    book_search.h \
+    student_info_inquiry_search.h \
+    lendbook_overall.h \
+    bookinquiry_table.h \
+    managerinfo_overall_show.h
 
 
 FORMS    += \
@@ -83,7 +95,13 @@ FORMS    += \
     usrmag_manager.ui \
     managerinfo_overall.ui \
     change_manager_info.ui \
-    usrmag_student.ui
+    usrmag_student.ui \
+    inquiry_manager.ui \
+    book_search.ui \
+    student_info_inquiry_search.ui \
+    lendbook_overall.ui \
+    bookinquiry_table.ui \
+    managerinfo_overall_show.ui
 
 
 QT += sql

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>lendbook_overall</class>
+ <widget class="QDialog" name="lendbook_overall">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1059</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>1001</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>作者</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>价格</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>上架日期</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>是否上架</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>是否出借</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>借阅者</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>是否预借</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

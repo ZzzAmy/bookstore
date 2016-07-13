@@ -17,6 +17,7 @@ usrmag_manager::~usrmag_manager()
 
 void usrmag_manager::on_pushButton_clicked()
 {
+    this->hide();
     managerinfo_overall a;
     if(a.exec() == QDialog::Accepted)
     {
@@ -24,11 +25,4 @@ void usrmag_manager::on_pushButton_clicked()
     }
 }
 
-void usrmag_manager::on_pushButton_4_clicked()
-{
-    change_manager_info a;
-    if(a.exec() == QDialog::Accepted)
-    {
 
-    }
-}

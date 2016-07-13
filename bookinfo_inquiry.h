@@ -1,4 +1,4 @@
-#ifndef BOOKINFO_INQUIRY_H
+﻿#ifndef BOOKINFO_INQUIRY_H
 #define BOOKINFO_INQUIRY_H
 
 #include <QDialog>
@@ -14,6 +14,13 @@ class bookinfo_inquiry : public QDialog
 public:
     explicit bookinfo_inquiry(QWidget *parent = 0);
     ~bookinfo_inquiry();
+
+private slots:
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::bookinfo_inquiry *ui;

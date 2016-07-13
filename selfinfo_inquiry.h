@@ -1,4 +1,4 @@
-#ifndef SELFINFO_INQUIRY_H
+﻿#ifndef SELFINFO_INQUIRY_H
 #define SELFINFO_INQUIRY_H
 
 #include <QDialog>
@@ -14,6 +14,9 @@ class selfinfo_inquiry : public QDialog
 public:
     explicit selfinfo_inquiry(QWidget *parent = 0);
     ~selfinfo_inquiry();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
     Ui::selfinfo_inquiry *ui;

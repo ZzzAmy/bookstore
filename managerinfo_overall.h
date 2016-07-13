@@ -1,4 +1,4 @@
-#ifndef MANAGERINFO_OVERALL_H
+﻿#ifndef MANAGERINFO_OVERALL_H
 #define MANAGERINFO_OVERALL_H
 
 #include <QDialog>
@@ -14,6 +14,17 @@ class managerinfo_overall : public QDialog
 public:
     explicit managerinfo_overall(QWidget *parent = 0);
     ~managerinfo_overall();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_5_clicked();
 
 private:
     Ui::managerinfo_overall *ui;

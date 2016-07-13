@@ -1,4 +1,4 @@
-#ifndef STUDENT_INFO_INQUIRY_H
+﻿#ifndef STUDENT_INFO_INQUIRY_H
 #define STUDENT_INFO_INQUIRY_H
 
 #include <QDialog>
@@ -14,6 +14,11 @@ class student_info_inquiry : public QDialog
 public:
     explicit student_info_inquiry(QWidget *parent = 0);
     ~student_info_inquiry();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::student_info_inquiry *ui;

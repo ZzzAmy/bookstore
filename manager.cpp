@@ -18,6 +18,7 @@ manager::~manager()
 
 void manager::on_inquiryBtn_clicked()
 {
+    this->hide();
     Inquiry a;
     if(a.exec() == QDialog::Accepted)
     {
@@ -27,6 +28,7 @@ void manager::on_inquiryBtn_clicked()
 
 void manager::on_bookmanageBtn_clicked()
 {
+    this->hide();
     bookinfo_inquiry a;
     if(a.exec() == QDialog::Accepted)
     {
@@ -36,6 +38,7 @@ void manager::on_bookmanageBtn_clicked()
 
 void manager::on_usrmanageBtn_clicked()
 {
+    this->hide();
     usrmanagement a;
     if(a.exec() == QDialog::Accepted)
     {

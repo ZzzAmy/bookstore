@@ -20,6 +20,10 @@ private slots:
 
     void on_studentinfo_inquiry_clicked();
 
+    void on_bookinfo_inquiry_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::Inquiry *ui;
 };
