@@ -8,6 +8,8 @@ int main(int argc, char *argv[])
     if(dlg.exec() == QDialog::Accepted)
     {
 
+
+
        return a.exec();
     }
     else return 0;
