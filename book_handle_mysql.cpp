@@ -1,4 +1,4 @@
-﻿#include "handle_mysql.h"
+﻿#include "book_handle_mysql.h"
 
 Handle_MySQL::Handle_MySQL() {}
 
@@ -33,46 +33,48 @@ int Handle_MySQL::Conn_MySQL(const char *host,const char * user,const char* pass
 //查询数据;
 string Handle_MySQL::SelectData( char * SQL, string * Msg)
 {
-    char sql[2048];
-    sprintf(sql, SQL);
-    if (mysql_query(&mysql, sql) != 0)                             //执行命令，并反馈执行结果;
-    {
-        string s("select ps_info Error");
-        *Msg = s;
-        return "";
-    }
 
-    MYSQL_RES *result = mysql_store_result(&mysql);                //将查询到的数据保存到result;
-    if (result == NULL)
-    {
-        string s("select username Error!");
-        *Msg = s;
-        return "";
-    }
-
-    string str;
-    MYSQL_FIELD *fd1;
-    int j = mysql_num_fields(result);                             //获取列数;
-    for (int i = 0; fd1 = mysql_fetch_field(result); ++i)          //获取列名;
-    {
-        str += fd1->name;
-        string s = fd1->name;
-        for (unsigned int k = 0; k < 15 - s.size(); ++k) { str += " "; }
-    }
-    str += "\n";
-
-    while (MYSQL_ROW sql_row = mysql_fetch_row(result))          //获取具体数据;
-    {
-        for (int i = 0; i < j; i++)
+        char sql[2048];
+        sprintf(sql, SQL);
+        if (mysql_query(&mysql, sql) != 0)                             //执行命令，并反馈执行结果;
         {
-            str += sql_row[i];
-            string s = sql_row[i];                              //这里的格式是特殊设置,为输出美观;
+            string s("select ps_info Error");
+            *Msg = s;
+            return "";
+        }
+
+        MYSQL_RES *result = mysql_store_result(&mysql);                //将查询到的数据保存到result;
+        if (result == NULL)
+        {
+            string s("select username Error!");
+            *Msg = s;
+            return "";
+        }
+
+        string str;
+        MYSQL_FIELD *fd1;
+        int j = mysql_num_fields(result);                             //获取列数;
+
+        for (unsigned int i = 0; fd1 = mysql_fetch_field(result); i++)          //获取列名;
+        {
+            str += fd1->name;
+            string s = fd1->name;
             for (unsigned int k = 0; k < 15 - s.size(); ++k) { str += " "; }
         }
-        str += '\n';
-    }
-    mysql_free_result(result);
-    return str;
+        str += "\n";
+
+        while (MYSQL_ROW sql_row = mysql_fetch_row(result))          //获取具体数据;
+        {
+            for (unsigned int i = 0; i < j; i++)
+            {
+                str += sql_row[i];
+                string s = sql_row[i];                              //这里的格式是特殊设置,为输出美观;
+                for (unsigned int k = 0; k < 15 - s.size(); ++k) { str += " "; }
+            }
+            str += '\n';
+        }
+        mysql_free_result(result);
+        return str;
 }
 
 //插入数据;

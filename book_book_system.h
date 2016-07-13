@@ -1,7 +1,7 @@
 #ifndef SYSTEM_MANAGEMENT
 #define SYSTEM_MANAGEMENT
 
-#include "handle_mysql.h"
+#include "book_handle_mysql.h"
 
 class Administrator;
 //学生类;
@@ -17,6 +17,7 @@ class Student
     friend class Book_management;
     friend class Query;
     friend class Administrator;
+    friend class LoginDialog;
 public:
     //构造函数,析构函数;
     Student() = default;
@@ -45,7 +46,9 @@ class Administrator
     friend class Password_management;
     friend class Book_management;
     friend class Query;
-    friend class Administrator;
+    friend class LoginDialog;
+    friend class manager;
+    friend class selfinfo_inquiry;
 public:
     //构造函数,析构函数;
     Administrator() = default;

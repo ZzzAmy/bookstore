@@ -3,8 +3,8 @@
 #include "selfinfo_inquiry.h"
 #include "student_info_inquiry.h"
 
-Inquiry::Inquiry(QWidget *parent) :
-    QDialog(parent),
+Inquiry::Inquiry(Administrator *adm1,QWidget *parent) :
+    QDialog(parent),adm(adm1),
     ui(new Ui::Inquiry)
 {
     ui->setupUi(this);
@@ -17,7 +17,7 @@ Inquiry::~Inquiry()
 
 void Inquiry::on_selfinfo_inquiry_clicked()
 {
-    selfinfo_inquiry a;
+    selfinfo_inquiry a(adm,NULL);
     if(a.exec() == QDialog::Accepted)
     {
 

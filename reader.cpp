@@ -2,8 +2,8 @@
 #include "ui_reader.h"
 #include "returnwindow.h"
 
-Reader::Reader(QWidget *parent) :
-    QDialog(parent),
+Reader::Reader(Student *stu1,QWidget *parent) :
+    QDialog(parent),stu(stu1),
     ui(new Ui::Reader)
 {
     ui->setupUi(this);

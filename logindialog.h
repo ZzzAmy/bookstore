@@ -2,7 +2,7 @@
 #define LOGINDIALOG_H
 
 #include <QDialog>
-
+#include "book_header.h"
 
 namespace Ui {
 class LoginDialog;

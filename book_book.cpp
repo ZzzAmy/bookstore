@@ -1,4 +1,4 @@
-#include "book.h"
+#include "book_book.h"
 
 //获取目标书目的isbn和name;
 void target_book(Book *book)
@@ -58,7 +58,7 @@ void Book::delete_book(string *Msg, Handle_MySQL * vspdctomysql)
         sprintf(SQL, "select name from books where isbn = '%s'", s1);
         string str = vspdctomysql->SelectData(SQL, Msg);
         string delete_book = "name           \n" + book_name;//因为从数据库中获取数据格式影响，必须转换;
-        for (int i = 0; i < 15 - book_name.size(); ++i)
+        for (unsigned int i = 0; i < 15 - book_name.size(); ++i)
         {
             delete_book += " ";
         }
@@ -149,7 +149,7 @@ void Book_management::return_book(Book *book, Student *student, string *Msg, Han
     sprintf(SQL, "select borrowedbook1 from students where number = '%s'", s2);
     string str= vspdctomysql->SelectData(SQL, Msg);
     string str1 = "borrowedbook1  \n" + (book->book_isbn);
-    for (int i = 0; i < 15 - (book->book_isbn).size(); ++i)
+    for (unsigned int i = 0; i < 15 - (book->book_isbn).size(); ++i)
     {
         str1 += " ";
     }

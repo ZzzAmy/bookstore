@@ -3,9 +3,10 @@
 #include "inquiry.h"
 #include "bookinfo_inquiry.h"
 #include "usrmanagement.h"
+#include <QDebug>
 
-manager::manager(QWidget *parent) :
-    QDialog(parent),
+manager::manager(Administrator *adm1,QWidget *parent) :
+    QDialog(parent),adm(adm1),
     ui(new Ui::manager)
 {
     ui->setupUi(this);
@@ -18,7 +19,7 @@ manager::~manager()
 
 void manager::on_inquiryBtn_clicked()
 {
-    Inquiry a;
+    Inquiry a(adm,NULL);
     if(a.exec() == QDialog::Accepted)
     {
 

@@ -1,4 +1,4 @@
-﻿#include "book_system.h"
+﻿#include "book_book_system.h"
 
 //获取学生的学号和姓名;
 void target_student(Student * stu)

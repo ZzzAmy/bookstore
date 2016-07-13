@@ -32,10 +32,11 @@ SOURCES += main.cpp\
     managerinfo_overall.cpp \
     change_manager_info.cpp \
     usrstatic.cpp \
-    handle_mysql.cpp \
-    book.cpp \
-    query.cpp \
-    usrmag_student.cpp
+    usrmag_student.cpp \
+    book_book.cpp \
+    book_book_system.cpp \
+    book_handle_mysql.cpp \
+    book_query.cpp
 
 
 HEADERS  += \
@@ -58,10 +59,12 @@ HEADERS  += \
     managerinfo_overall.h \
     change_manager_info.h \
     usrstatic.h \
-    handle_mysql.h \
-    query.h \
-    book.h \
-    usrmag_student.h
+    usrmag_student.h \
+    book_query.h \
+    book_handle_mysql.h \
+    book_book.h \
+    book_book_system.h \
+    book_header.h
 
 
 FORMS    += \

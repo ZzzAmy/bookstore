@@ -2,6 +2,7 @@
 #define MANAGER_H
 
 #include <QDialog>
+#include <book_header.h>
 
 namespace Ui {
 class manager;
@@ -12,7 +13,7 @@ class manager : public QDialog
     Q_OBJECT
 
 public:
-    explicit manager(QWidget *parent = 0);
+    explicit manager(Administrator *adm1,QWidget *parent = 0);
     ~manager();
 
 private slots:
@@ -24,6 +25,7 @@ private slots:
 
 private:
     Ui::manager *ui;
+    Administrator *adm;
 };
 
 #endif // MANAGER_H

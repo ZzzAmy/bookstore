@@ -1,14 +1,15 @@
-#include "query.h"
+#include "book_query.h"
+#include "book_book_system.h"
 
 //管理员信息查询函数--管理员;
-void Query::admin_query(string *Msg,Administrator *adm, Handle_MySQL *vspdctomysql)
+string Query::admin_query(string *Msg,Administrator *adm, Handle_MySQL *vspdctomysql)
 {
     //显示除密码以外的其他信息,只能查自己的信息;
     char s[2048], SQL[2048];
     strcpy(s, (adm->administrator_num).c_str());
     sprintf(SQL, "select number,name,age from administrators where number = '%s'", s);
     string str = vspdctomysql->SelectData(SQL, Msg);
-    cout << str;
+    return str;
 }
 
 //学生信息查询函数--学生;

@@ -2,7 +2,7 @@
 #define READER_H
 
 #include <QDialog>
-
+#include "book_header.h"
 namespace Ui {
 class Reader;
 }
@@ -12,7 +12,7 @@ class Reader : public QDialog
     Q_OBJECT
 
 public:
-    explicit Reader(QWidget *parent = 0);
+    explicit Reader(Student *stu1,QWidget *parent = 0);
     ~Reader();
 
 private slots:
@@ -20,6 +20,7 @@ private slots:
 
 private:
     Ui::Reader *ui;
+    Student *stu;
 };
 
 #endif // READER_H

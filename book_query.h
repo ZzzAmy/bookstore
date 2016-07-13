@@ -1,7 +1,9 @@
 #ifndef Query_H
 #define Query_H
 
-#include "book_system.h"
+#include "book_book_system.h"
+#include <Qstring>
+#include <QObject>
 
 class Query
 {
@@ -13,7 +15,7 @@ public:
     ~Query(){}
 public:
     //管理员信息查询函数--管理员;
-    void admin_query(string *Msg, Administrator *adm, Handle_MySQL *vspdctomysql);
+    string admin_query(string *Msg, Administrator *adm, Handle_MySQL *vspdctomysql);
     //学生信息查询函数--学生;
     void student_query(Student *stu, string *Msg, Handle_MySQL *vspdctomysql);
     //学生信息查询函数--管理员;
