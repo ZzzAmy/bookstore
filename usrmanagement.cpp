@@ -40,8 +40,8 @@ void usrmanagement::on_pushButton_clicked()
 void usrmanagement::on_pushButton_3_clicked()
 {
     this->hide();
-    manager a;
-    a.exec();
+  //  manager a;
+  //  a.exec();
 
 
 }
