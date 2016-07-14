@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>50</y>
+     <y>30</y>
      <width>131</width>
      <height>41</height>
     </rect>
@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>90</y>
+     <y>70</y>
      <width>131</width>
      <height>41</height>
     </rect>
@@ -43,20 +43,20 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>130</y>
+     <y>110</y>
      <width>131</width>
      <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>添加学生信息</string>
+    <string>添加学生</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>170</y>
+     <y>150</y>
      <width>131</width>
      <height>41</height>
     </rect>
@@ -69,13 +69,26 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>210</y>
+     <y>190</y>
      <width>131</width>
      <height>41</height>
     </rect>
    </property>
    <property name="text">
     <string>删除学生</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>230</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
    </property>
   </widget>
  </widget>

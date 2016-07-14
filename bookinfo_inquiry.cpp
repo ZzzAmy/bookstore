@@ -51,6 +51,6 @@ void bookinfo_inquiry::on_pushButton_clicked()
 void bookinfo_inquiry::on_pushButton_3_clicked()
 {
     this->hide();
-    //Inquiry a;
-    //a.exec();
+    Inquiry a;
+    a.exec();
 }

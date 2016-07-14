@@ -1,0 +1,23 @@
+﻿#include "reader_inquiry.h"
+#include "ui_reader_inquiry.h"
+#include "reader_inquirt_self.h"
+
+reader_inquiry::reader_inquiry(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::reader_inquiry)
+{
+    ui->setupUi(this);
+}
+
+reader_inquiry::~reader_inquiry()
+{
+    delete ui;
+}
+
+void reader_inquiry::on_pushButton_clicked()
+{
+    this->hide();
+    reader_inquirt_self a;
+    a.exec();
+    
+}

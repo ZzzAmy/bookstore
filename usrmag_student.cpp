@@ -1,6 +1,6 @@
 ﻿#include "usrmag_student.h"
 #include "ui_usrmag_student.h"
-#include "student_info_inquiry.h"
+#include "studentinfo_overall.h"
 
 usrmag_student::usrmag_student(QWidget *parent) :
     QDialog(parent),
@@ -16,10 +16,10 @@ usrmag_student::~usrmag_student()
 
 void usrmag_student::on_pushButton_clicked()
 {
-    student_info_inquiry a;
-    if(a.exec() == QDialog::Accepted)
-    {
+//    this->hide();
+//    studentinfo_overall a;
+//    if(a.exec() == QDialog::Accepted)
+//    {
 
-    }
-
+//    }
 }

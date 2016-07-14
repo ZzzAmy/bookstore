@@ -1,4 +1,4 @@
-#ifndef CHANGE_MANAGER_INFO_H
+﻿#ifndef CHANGE_MANAGER_INFO_H
 #define CHANGE_MANAGER_INFO_H
 
 #include <QDialog>
@@ -14,6 +14,11 @@ class change_manager_info : public QDialog
 public:
     explicit change_manager_info(QWidget *parent = 0);
     ~change_manager_info();
+
+private slots:
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::change_manager_info *ui;

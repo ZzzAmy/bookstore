@@ -1,6 +1,6 @@
 ﻿#include "reader.h"
 #include "ui_reader.h"
-
+#include "book_search.h"
 
 Reader::Reader(QWidget *parent) :
     QDialog(parent),
@@ -16,5 +16,6 @@ Reader::~Reader()
 
 void Reader::on_pushButton_2_clicked()
 {
-
+    book_search a;
+    a.exec();
 }
