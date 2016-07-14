@@ -49,7 +49,7 @@
     </rect>
    </property>
    <property name="text">
-    <string> 按工号升序输出</string>
+    <string> 按学号升序输出</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
@@ -62,7 +62,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>按工号降序输出</string>
+    <string>按学号降序输出</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">

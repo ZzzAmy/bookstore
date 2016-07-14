@@ -22,6 +22,8 @@ private slots:
 
     void on_usrmanageBtn_clicked();
 
+    void on_pwdmanageBtn_clicked();
+
 private:
     Ui::manager *ui;
 };

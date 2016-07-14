@@ -25,24 +25,24 @@ void change_manager_info::on_pushButton_3_clicked()
 
 void change_manager_info::on_pushButton_clicked()
 {
-//    QString num = ui->lineEdit->text();
-//    QString pwd = ui->lineEdit_2->text();
+    QString num = ui->lineEdit->text();
+    QString pwd = ui->lineEdit_2->text();
 
-//    if(num == "123" && pwd == "123")
-//    {
-//        this->hide();
-//        change_manager_info_input a;
-//        if(a.exec() == QDialog::Accepted)
-//        {
+    if(num == "123" && pwd == "123")
+    {
+        this->hide();
+        change_manager_info_input a;
+        if(a.exec() == QDialog::Accepted)
+        {
 
-//        }
+        }
 
-//    }
-//    else
-//    {
-//        QMessageBox::warning(this, tr("Waring"),
-//                               tr("user name or password error!Please input again."),
-//                                                              QMessageBox::Yes);
-//}
+    }
+    else
+    {
+        QMessageBox::warning(this, tr("Waring"),
+                               tr("user name or password error!Please input again."),
+                                                              QMessageBox::Yes);
+}
 
 }

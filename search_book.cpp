@@ -1,6 +1,6 @@
-#include "search_book.h"
+﻿#include "search_book.h"
 #include "ui_search_book.h"
-
+#include "bookinquiry_table.h"
 search_book::search_book(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::search_book)
@@ -28,4 +28,7 @@ void search_book::on_book_search_bn_clicked() //查找图书界面
     {
          this->ui->label->setText("you choose NO.3");
     }
+    bookinquiry_table a;
+    a.exec();
+
 }

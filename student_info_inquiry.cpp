@@ -1,7 +1,8 @@
 ﻿#include "student_info_inquiry.h"
 #include "ui_student_info_inquiry.h"
-#include "student_info_inquiry_search.h"
-#include "inquiry.h"
+#include "student_info_inquiry_input.h"
+#include "usrmag_student.h"
+#include "QMessageBox.h"
 
 student_info_inquiry::student_info_inquiry(QWidget *parent) :
     QDialog(parent),
@@ -19,13 +20,18 @@ student_info_inquiry::~student_info_inquiry()
 void student_info_inquiry::on_pushButton_clicked()
 {
     this->hide();
-    student_info_inquiry_search a;
+
+    student_info_inquiry_input a;
     a.exec();
+
+
+
+
 }
 
 void student_info_inquiry::on_pushButton_2_clicked()
 {
     this->hide();
-    Inquiry a;
+    usrmag_student a;
     a.exec();
 }

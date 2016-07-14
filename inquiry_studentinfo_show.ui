@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>reader_inquirt_self</class>
- <widget class="QDialog" name="reader_inquirt_self">
+ <class>inquiry_studentinfo_show</class>
+ <widget class="QDialog" name="inquiry_studentinfo_show">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -17,13 +17,13 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>70</y>
+     <y>60</y>
      <width>261</width>
-     <height>161</height>
+     <height>171</height>
     </rect>
    </property>
    <property name="text">
-    <string>学生个人信息查询显示</string>
+    <string>显示</string>
    </property>
   </widget>
  </widget>

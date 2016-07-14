@@ -45,26 +45,26 @@ SOURCES += main.cpp\
     inquiry_manager_show.cpp \
     add_manager.cpp \
     delete_manager.cpp \
-    administrator/add_book_fail.cpp \
-    administrator/add_book_succeed.cpp \
-    administrator/add_books.cpp \
-    administrator/book_delete.cpp \
-    administrator/book_delete_fail.cpp \
-    administrator/book_delete_succeed.cpp \
-    administrator/book_manage.cpp \
-    administrator/code_manage.cpp \
-    administrator/code_modify_fail.cpp \
-    administrator/code_modify_succeed.cpp \
-    administrator/main.cpp \
-    administrator/mainwindow.cpp \
-    reader/book_borrow.cpp \
-    reader/book_imformation.cpp \
-    reader/code_modify_stu.cpp \
-    reader/code_modify_stu_2.cpp \
-    reader/main.cpp \
-    reader/mainwindow.cpp \
-    reader/search_book.cpp \
-    reader/stu_imformation.cpp \
+#    administrator/add_book_fail.cpp \
+#    administrator/add_book_succeed.cpp \
+#    administrator/add_books.cpp \
+#    administrator/book_delete.cpp \
+#    administrator/book_delete_fail.cpp \
+#    administrator/book_delete_succeed.cpp \
+#    administrator/book_manage.cpp \
+#    administrator/code_manage.cpp \
+#    administrator/code_modify_fail.cpp \
+#    administrator/code_modify_succeed.cpp \
+#    administrator/main.cpp \
+#    administrator/mainwindow.cpp \
+#    reader/book_borrow.cpp \
+#    reader/book_imformation.cpp \
+#    reader/code_modify_stu.cpp \
+#    reader/code_modify_stu_2.cpp \
+#    reader/main.cpp \
+#    reader/mainwindow.cpp \
+#    reader/search_book.cpp \
+#    reader/stu_imformation.cpp \
     studentinfo_overall.cpp \
     studentinfo_overall_show.cpp \
     student_info_inquiry_input.cpp \
@@ -74,7 +74,7 @@ SOURCES += main.cpp\
     book_system.cpp \
     code_modify_stu.cpp \
     code_modify_stu_2.cpp \
-    mainwindow.cpp \
+    #mainwindow.cpp \
     search_book.cpp \
     stu_imformation.cpp \
     add_book_fail.cpp \
@@ -87,8 +87,14 @@ SOURCES += main.cpp\
     code_manage.cpp \
     code_modify_fail.cpp \
     code_modify_succeed.cpp \
-    reader_inquiry.cpp \
-    reader_inquirt_self.cpp
+    delete_manager_select.cpp \
+    add_student.cpp \
+    change_student_info.cpp \
+    delete_student.cpp \
+    delete_student_input.cpp \
+    inquiry_studentinfo.cpp \
+    inquiry_studentinfo_show.cpp \
+    reader_inquiry.cpp
 
 
 HEADERS  += \
@@ -126,7 +132,6 @@ HEADERS  += \
     delete_manager.h \
     studentinfo_overall.h \
     studentinfo_overall_show.h \
-    idcheck.h \
     student_info_inquiry_input.h \
     change_manager_info_input.h \
     book_book.h \
@@ -135,7 +140,7 @@ HEADERS  += \
     book_system.h \
     code_modify_stu.h \
     code_modify_stu_2.h \
-    mainwindow.h \
+    #mainwindow.h \
     search_book.h \
     stu_imformation.h \
     add_book_fail.h \
@@ -148,8 +153,14 @@ HEADERS  += \
     code_manage.h \
     code_modify_fail.h \
     code_modify_succeed.h \
-    reader_inquiry.h \
-    reader_inquirt_self.h
+    delete_manager_select.h \
+    add_student.h \
+    change_student_info.h \
+    delete_student.h \
+    delete_student_input.h \
+    inquiry_studentinfo.h \
+    inquiry_studentinfo_show.h \
+    reader_inquiry.h
 
 
 FORMS    += \
@@ -180,27 +191,27 @@ FORMS    += \
     inquiry_manager_show.ui \
     add_manager.ui \
     delete_manager.ui \
-    administrator/add_book_fail.ui \
-    administrator/add_book_succeed.ui \
-    administrator/add_books.ui \
-    administrator/book_delete.ui \
-    administrator/book_delete_fail.ui \
-    administrator/book_delete_succeed.ui \
-    administrator/book_manage.ui \
-    administrator/code_manage.ui \
-    administrator/code_modify_fail.ui \
-    administrator/code_modify_succeed.ui \
-    administrator/mainwindow.ui \
-    reader/book_borrow.ui \
-    reader/book_imformation.ui \
-    reader/code_modify_stu.ui \
-    reader/code_modify_stu_2.ui \
-    reader/mainwindow.ui \
-    reader/search_book.ui \
-    reader/stu_imformation.ui \
+#    administrator/add_book_fail.ui \
+#    administrator/add_book_succeed.ui \
+#    administrator/add_books.ui \
+#    administrator/book_delete.ui \
+#    administrator/book_delete_fail.ui \
+#    administrator/book_delete_succeed.ui \
+#    administrator/book_manage.ui \
+#    administrator/code_manage.ui \
+#    administrator/code_modify_fail.ui \
+#    administrator/code_modify_succeed.ui \
+#    administrator/mainwindow.ui \
+#    reader/book_borrow.ui \
+#    reader/book_imformation.ui \
+#    reader/code_modify_stu.ui \
+#    reader/code_modify_stu_2.ui \
+#    reader/mainwindow.ui \
+#    reader/search_book.ui \
+#    reader/stu_imformation.ui \
     studentinfo_overall.ui \
     studentinfo_overall_show.ui \
-    idcheck.ui \
+#    idcheck.ui \
     student_info_inquiry_input.ui \
     usrmag_student.ui \
     change_manager_info_input.ui \
@@ -208,7 +219,7 @@ FORMS    += \
     book_imformation.ui \
     code_modify_stu.ui \
     code_modify_stu_2.ui \
-    mainwindow.ui \
+    #mainwindow.ui \
     returnsuccess.ui \
     search_book.ui \
     stu_imformation.ui \
@@ -222,8 +233,14 @@ FORMS    += \
     code_manage.ui \
     code_modify_fail.ui \
     code_modify_succeed.ui \
-    reader_inquiry.ui \
-    reader_inquirt_self.ui
+    delete_manager_select.ui \
+    add_student.ui \
+    change_student_info.ui \
+    delete_student.ui \
+    delete_student_input.ui \
+    inquiry_studentinfo.ui \
+    inquiry_studentinfo_show.ui \
+    reader_inquiry.ui
 
 
 QT += sql

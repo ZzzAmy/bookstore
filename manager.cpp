@@ -3,7 +3,8 @@
 #include "inquiry.h"
 #include "bookinfo_inquiry.h"
 #include "usrmanagement.h"
-
+#include "book_manage.h"
+#include "code_manage.h"
 manager::manager(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::manager)
@@ -26,14 +27,10 @@ void manager::on_inquiryBtn_clicked()
     }
 }
 
-void manager::on_bookmanageBtn_clicked()
+void manager::on_bookmanageBtn_clicked()//图书管理
 {
-    this->hide();
-    bookinfo_inquiry a;
-    if(a.exec() == QDialog::Accepted)
-    {
-
-    }
+    book_manage a;
+    a.exec();
 }
 
 void manager::on_usrmanageBtn_clicked()
@@ -44,4 +41,11 @@ void manager::on_usrmanageBtn_clicked()
     {
 
     }
+}
+
+void manager::on_pwdmanageBtn_clicked()//密码管理
+{
+    code_manage a;
+    a.exec();
+
 }

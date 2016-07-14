@@ -4,7 +4,7 @@
 #include "student_info_inquiry.h"
 #include "bookinfo_inquiry.h"
 #include "manager.h"
-
+#include "inquiry_studentinfo.h"
 Inquiry::Inquiry(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Inquiry)
@@ -17,7 +17,7 @@ Inquiry::~Inquiry()
     delete ui;
 }
 
-void Inquiry::on_selfinfo_inquiry_clicked()
+void Inquiry::on_selfinfo_inquiry_clicked()//个人信息查询
 {
     this->hide();
     selfinfo_inquiry a;
@@ -28,17 +28,18 @@ void Inquiry::on_selfinfo_inquiry_clicked()
     }
 }
 
-void Inquiry::on_studentinfo_inquiry_clicked()
+void Inquiry::on_studentinfo_inquiry_clicked()//学生信息查询
 {
     this->hide();
     student_info_inquiry a;
     if(a.exec() == QDialog::Accepted)
     {
-
+        inquiry_studentinfo a;
+        a.exec();
     }
 }
 
-void Inquiry::on_bookinfo_inquiry_clicked()
+void Inquiry::on_bookinfo_inquiry_clicked()//图书信息查询
 {
     this->hide();
     bookinfo_inquiry a;

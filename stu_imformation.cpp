@@ -1,6 +1,6 @@
-#include "stu_imformation.h"
+﻿#include "stu_imformation.h"
 #include "ui_stu_imformation.h"
-
+#include "reader.h"
 #include "mainwindow.h"
 stu_imformation::stu_imformation(QWidget *parent) :
     QDialog(parent),
@@ -18,5 +18,7 @@ stu_imformation::~stu_imformation()
 
 void stu_imformation::on_return_main_clicked() //此处应该返回到借阅者的主界面（梦洢写的）
 {
-
+    this->hide();
+    Reader a;
+    a.exec();
 }
